@@ -1,0 +1,196 @@
+
+
+:root {
+    --color-principal: #c0392b;     /* Cabecera y botones */
+    --color-secundario: #faf6f2;    /* Fondo general */
+    --color-acento: #e67e22;        /* Hover o detalles */
+    --color-texto: #2c3e50;         /* Texto */
+}
+
+
+
+header, footer {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+button {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover, nav a:hover, footer a:hover {
+    background-color: var(--color-acento);
+    color: white;
+}
+
+/* === VARIABLES DE COLOR === */
+:root {
+    --color-principal: #d9534f;
+    --color-secundario: #f7f7f7;
+    --color-texto: #333;
+}
+
+/* === ESTILOS GENERALES === */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-principal);
+    color: white;
+    padding: 15px 50px;
+}
+
+.logo {
+        .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    height: 80px;
+    background: none; /* elimina el fondo azul/verde */
+}
+;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav a.activo {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: #ffe4e1;
+}
+
+/* === SECCIÓN PRINCIPAL === */
+.presentacion {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.presentacion img {
+    width: 300px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* === TARJETAS === */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* === FORMULARIO === */
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: bakcground-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #b52b27;
+    transform: scale(1.05);
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* === EFECTOS VISUALES EN ENLACES === */
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--color-acento);
+    border-radius: 5px;
+}
+
+nav a.activo {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
